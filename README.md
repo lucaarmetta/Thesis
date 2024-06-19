@@ -30,3 +30,7 @@ To conclude, the potential of deep learning in ECG analysis is enormous: The set
 
 The aim of the research was to reconstruct, from an electrocardiogram (ECG), the signal that would ideally precede and follow over time. This required the preliminary analysis of the ECGs examined, in order to subsequently define and train the convolutional neural network (CNN) through the use of deep learning to ensure that you could predict the evolution of the ECG itself.\
 Since clinics still use a lot of paper ECG’s that have a duration of ten seconds, of which the first five show the first 6 leads of the ECG while the remaining five show the remaining 6 leads of the ECG, the goal was to reconstruct the leads that are not observed, namely the first 6 in the second five seconds, and the second 6 in the first five seconds, starting from the initial information held.
+
+## Methods and Materials Used
+
+### Dataset
