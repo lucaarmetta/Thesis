@@ -1,4 +1,4 @@
-# Internship and Thesis
+# Use of deep learning techniques for the reconstruction of electrocardiographic signals
 
 ## Abstract
 
