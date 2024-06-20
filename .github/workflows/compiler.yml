@@ -1,5 +1,5 @@
 name: Compile LaTeX document
-#comment
+
 on:
   push:
     branches:
@@ -16,13 +16,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up LaTeX
-      uses: dante-ev/latex-action@v2
+    - name: Set up LaTeX environment
+      uses: xu-cheng/latex-action@v2
       with:
         root_file: thesis/tesi.tex
-        
-    - name: Compile LaTeX document
-      run: latexmk -pdf -shell-escape -interaction=nonstopmode -file-line-error thesis/tesi.tex
+        # If your document needs multiple runs to fully resolve references or create the bibliography
+        # compiler: xelatex # or lualatex/pdflatex if you prefer
+        # args: -file-line-error -interaction=nonstopmode
 
     - name: Upload PDF
       uses: actions/upload-artifact@v2
