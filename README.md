@@ -1,11 +1,24 @@
-# Use of deep learning techniques for the reconstruction of electrocardiographic signals
+# Internship and Thesis Project
 
-## 1
+This repository contains the project related to my internship and thesis. The project includes written documentation (the thesis itself), images used in the documentation, and Python source code.
 
-### 1.1
+## Description
 
-1.1.1
+The project aims to [briefly describe the project and its main objectives].
 
-### 1.2
+## Contents
 
-1.2.1
+- `thesis/`: Directory containing the main thesis document, images, and related files.
+- `code/`: Directory with Python source code used in the project.
+- `README.md`: This file, providing an overview of the project.
+- `LICENSE`: The license file specifying the terms of use for the code and documentation.
+
+## Installation
+
+To run the code in this repository, it is recommended to follow these steps:
+
+1. Clone the repository to your computer:
+
+   ```bash
+   git clone https://github.com/lucaarmetta/project-thesis.git
+   cd project-thesis
