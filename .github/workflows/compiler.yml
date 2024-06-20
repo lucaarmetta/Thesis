@@ -10,15 +10,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up TeX Live
-      uses: xu-cheng/latex-action
-
     - name: Compile LaTeX document
-      run: |
-        latexmk -pdf -f thesis.tex
-
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: thesis.tex
+        latexmk_options: -pdf
     - name: Upload PDF
       uses: actions/upload-artifact@v2
       with:
         name: compiled-document
-        path: your_document.pdf
+        path: thesis.pdf
