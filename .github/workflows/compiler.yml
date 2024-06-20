@@ -1,5 +1,5 @@
 name: Compile LaTeX document
-
+#comment
 on:
   push:
     branches:
