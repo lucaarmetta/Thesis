@@ -20,9 +20,12 @@ jobs:
       uses: xu-cheng/latex-action@v2
       with:
         root_file: thesis/tesi.tex
-        # If your document needs multiple runs to fully resolve references or create the bibliography
-        # compiler: xelatex # or lualatex/pdflatex if you prefer
-        # args: -file-line-error -interaction=nonstopmode
+
+    - name: Compile LaTeX document
+      run: |
+        sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended biber
+        cd thesis
+        latexmk -pdf -shell-escape -interaction=nonstopmode -file-line-error tesi.tex
 
     - name: Upload PDF
       uses: actions/upload-artifact@v2
