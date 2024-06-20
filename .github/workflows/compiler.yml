@@ -16,20 +16,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up LaTeX environment
+    - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
       with:
         root_file: thesis/tesi.tex
         latexmk_shell_escape: true
-
-    - name: Compile LaTeX document
-      run: |
-        sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended biber
-        cp -r thesis/* .
-        latexmk -pdf -shell-escape -interaction=nonstopmode -file-line-error tesi.tex
+        extra_packages: biber
 
     - name: Upload PDF
       uses: actions/upload-artifact@v2
       with:
         name: thesis-pdf
-        path: tesi.pdf
+        path: thesis/tesi.pdf
