@@ -4,7 +4,9 @@ This repository contains the project related to my internship and thesis. The pr
 
 ## Description
 
-The project aims to [briefly describe the project and its main objectives].
+The project aims to reconstruct, based on an electrocardiogram (ECG), the signal that would ideally precede and follow it over time. This necessitated preliminary analysis of the ECGs under examination to subsequently define and train a convolutional neural network (CNN) using deep learning, enabling prediction of the ECG's evolution.\
+Given that clinics still extensively use 10-second paper ECGs, where the first five seconds display the initial 6 leads of the ECG and the remaining five seconds show the remaining 6 leads, the goal was to reconstruct the leads not initially observed. Specifically, this involved reconstructing the first 6 leads in the latter five seconds and the second 6 leads in the initial five seconds, starting from the initial information available.\
+The entire process was conducted using the Python programming language..
 
 ## Contents
 
