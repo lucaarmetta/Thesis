@@ -20,5 +20,5 @@ To run the code in this repository, it is recommended to follow these steps:
 1. Clone the repository to your computer:
 
    ```bash
-   git clone https://github.com/lucaarmetta/project-thesis.git
-   cd project-thesis
+   git clone https://github.com/lucaarmetta/UseOfDeepLearningTechniquesForTheReconstructionOfElectrocardiographicSignals
+   cd UseOfDeepLearningTechniquesForTheReconstructionOfElectrocardiographicSignals
