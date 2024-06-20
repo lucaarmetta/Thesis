@@ -16,9 +16,6 @@ jobs:
     - name: Compile LaTeX document
       run: |
         latexmk -pdf -f thesis.tex
-      env:
-        # Set the default environment variables here if needed
-        # PATH: /path/to/texlive/bin:$PATH
 
     - name: Upload PDF
       uses: actions/upload-artifact@v2
