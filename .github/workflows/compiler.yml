@@ -1,4 +1,4 @@
-name: Compile LaTeX document
+name: LaTeX CI
 
 on: [push, pull_request]
 
@@ -10,17 +10,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: List files in thesis directory
-      run: ls -la thesis
-
-    - name: Compile LaTeX document
+    - name: Set up LaTeX environment
       uses: xu-cheng/latex-action@v2
       with:
         root_file: thesis/tesi.tex
-        latexmk_options: -pdf
+        latexmk_flavor: latexmk
 
-    - name: Upload PDF
-      uses: actions/upload-artifact@v2
-      with:
-        name: compiled-document
-        path: thesis/tesi.pdf
+    - name: Compile LaTeX document
+      run: latexmk -pdf -cd thesis/tesi.tex
