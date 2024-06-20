@@ -15,9 +15,9 @@ The project aims to [briefly describe the project and its main objectives].
 
 ## Installation
 
-To run the code in this repository, it is recommended to follow these steps:
+To run the code in this repository, it is recommended to follow this step:
 
-1. Clone the repository to your computer:
+- Clone the repository to your computer:
 
    ```bash
    git clone https://github.com/lucaarmetta/UseOfDeepLearningTechniquesForTheReconstructionOfElectrocardiographicSignals
