@@ -10,11 +10,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: List files in thesis directory
+      run: ls -la thesis
+
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
       with:
         root_file: thesis/tesi.tex
         latexmk_options: -pdf
+
     - name: Upload PDF
       uses: actions/upload-artifact@v2
       with:
