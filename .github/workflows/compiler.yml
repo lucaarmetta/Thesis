@@ -1,20 +1,25 @@
-name: LaTeX CI
+name: latex rough_notes
 
-on: [push, pull_request]
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches:
+    - main
+    paths:
+    - 'thesis/tesi.tex'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
-  build:
+  latex-job:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up LaTeX environment
-      uses: xu-cheng/latex-action@v2
-      with:
-        root_file: thesis/tesi.tex
-        latexmk_flavor: latexmk
-
-    - name: Compile LaTeX document
-      run: latexmk -pdf -cd thesis/tesi.tex
+      
+      - name: download paper repo
+        uses: actions/checkout@v1
+      - name: build pdf 
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: tesi.tex
+          working_directory: thesis
