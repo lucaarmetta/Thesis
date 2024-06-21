@@ -1,4 +1,6 @@
-wfdb==4.1.0
-torch==2.0.0
-ipykernel==6.22.0
-numpy==1.24.2
+wfdb==3.4.0
+pandas==1.2.3
+numpy==1.19.5
+torch==1.7.1
+matplotlib==3.3.4
+scipy==1.6.2
