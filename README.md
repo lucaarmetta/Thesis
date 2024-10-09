@@ -10,8 +10,7 @@ The entire process was conducted using the Python programming language.
 
 ## Contents
 
-- `thesis/`: Directory containing the main thesis document, images, and related files.
-- `code/`: Directory with Python source code used in the project.
+- `code/`: Directory containing Python source code used in the project and the main thesis document, images, and related files.
 - `README.md`: This file, providing an overview of the project.
 - `LICENSE`: The license file specifying the terms of use for the code and documentation.
 
